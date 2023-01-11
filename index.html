@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="imgs/vercord.png" />
+    <style>
+      @media only screen and (max-width: 1650px) {
+        section#home {
+          grid-template-columns: 1fr 0.85fr;
+        }
+        .hero-statement {
+          margin-right: 1vw;
+        }
+      }
+
+      @media only screen and (max-width: 1150px) {
+        section#home {
+          grid-template-columns: 1fr;
+        }
+        .hero-statement {
+          margin: auto;
+        }
+        .hero-statement .img-wrapper {
+          margin: 50px 0;
+        }
+        nav.desktop-nav {
+          margin: auto;
+        }
+      }
+
+      @media only screen and (max-width: 900px) {
+        .hero-statement .img-wrapper {
+          margin: 50px auto;
+        }
+      }
+    </style>
+    <title>VerCord</title>
+    <meta name="theme-color" content="#52ef52" />
+    <meta name="description" content="Backup Discord members and add them to new server in the event of a server raid or deletion." />
+    <meta name="og:image" content="./imgs/vercord.png"/>
+  </head>
+  <body>
+    <div class="transition-fade"></div>
+    <div class="cursor"></div>
+    <div class="inner-cursor"></div>
+    <div class="cursor-modal"></div>
+    <header>
+      <nav class="desktop-nav">
+        <a href="index.html#home" aria-disabled="true">Home</a>
+        <a href="index.html#features" aria-disabled="true">Features</a>
+        <a href="index.html#team" aria-disabled="true">Team</a>
+        <a href="index.html#invite" aria-disabled="true">Invite</a>
+        <a href="./login/"><strong>Login</strong></a>
+      </nav>
+      <button class="okiguessvaticiscool-button">
+        <span class="line-one"></span>
+        <span class="line-two"></span>
+      </button>
+      <nav class="okiguessvaticiscool-wrapper">
+        <div class="okiguessvaticiscool-container">
+          <a href="index.html#home" aria-disabled="true"><span>Home</span></a>
+          <a href="index.html#features" aria-disabled="true"><span>Features</span></a>
+          <a href="index.html#team" aria-disabled="true"><span>Team</span></a>
+          <a href="index.html#invite" aria-disabled="true"><span>Invite</span></a>
+          <a href="./login/"><span>Login</span></a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="fade-in">
+        <div data-parallax data-xaxis="0" data-yaxis="0" class="hero-statement">
+          <h1 data-parallax data-xaxis="0.7" data-yaxis="0">
+            vercord<span class="dim-text">.net</span>
+          </h1>
+          <div
+            data-parallax
+            data-xaxis="0.5"
+            data-yaxis="0"
+            class="hero-descrip"
+          >
+            The <strong>strongest</strong> verification Bot
+          </div>
+          <div
+            class="img-wrapper"
+            data-highlight=""
+            data-parallax
+            data-xaxis="0.1"
+            data-yaxis="0.1"
+            data-color-background="#ea0f77"
+          >
+            <img src="imgs/vercord.png" alt="NICEVERCORDAVATAR" />
+          </div>
+          <a
+            href="https://discord.com/api/oauth2/authorize?client_id=1020653798605193286&permissions=268435457&scope=applications.commands%20bot"
+            target="_blank"
+            data-highlight=""
+            data-color-dot="#fff"
+            data-color-background="#5865F2"
+            rel="noopener noreferrer"
+            class="hero-cta"
+            >Invite</a
+          >
+        </div>
+        <div
+          class="img-container"
+          data-highlight=""
+          data-parallax
+          data-xaxis="0"
+          data-yaxis="0.12"
+          data-color-background="#ea0f77"
+        >
+          <img src="imgs/vercord.png" alt="NICEVERCORDAVATAR" />
+        </div>
+      </section>
+      <section id="features">
+        <div class="features-wrapper fade-in">
+          <span class="line"></span>
+          <button
+            data-feature="moderation"
+            data-highlight=""
+            data-color-background="#ea0f77"
+          >
+            <div class="inner-img-wrapper feature-active">
+              <img src="imgs/moderation.svg" alt="Support BROOOO" />
+            </div>
+          </button>
+          <span
+            class="text right feature-active-text"
+            data-label="feature"
+            aria-label="moderation"
+            >Support</span
+          >
+          </button>
+          <span class="text left" data-label="feature" aria-label="logging"
+            >Advanced Logs</span
+          >
+          <button
+            data-feature="logging"
+            data-highlight=""
+            data-color-background="#ea0f77"
+          >
+            <div class="inner-img-wrapper">
+              <img src="imgs/logging.svg" alt="SomethingSS Icon" />
+            </div>
+          </button>
+          <button
+            data-feature="configure"
+            data-highlight=""
+            data-color-background="#ea0f77"
+          >
+            <div class="inner-img-wrapper">
+              <img src="imgs/configure.svg" alt="SomethingSSSS Icon" />
+            </div>
+          </button>
+          <span class="text right" data-label="feature" aria-label="configure"
+            >Configuration</span
+          >
+        </div>
+        <div class="summary">
+          <span class="count fade-in">01</span>
+          <h2 class="fade-in">Support</h2>
+          <p class="fade-in">
+            We have a 24/7 support team to help you with any questions you have.
+          </p>
+          <a
+            href="https://discord.gg/hkuUXCdkHb"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="fade-in"
+          >
+            <span class="inner-text">Contact our Support Team</span>
+            <div class="arrow-container">
+              <div class="arrow-wrapper">
+                <span class="circle"></span>
+                <div class="arrow">
+                  <span class="line-one"></span>
+                  <span class="line-two"></span>
+                  <span class="line-three"></span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div
+          class="mobile-features fade-in"
+          data-highlight=""
+          data-color-background="#ea0f77"
+        >
+          <button class="mobile-feature-active">
+            <span class="inner-circle"></span>
+          </button>
+          <button>
+            <span class="inner-circle"></span>
+          </button>
+          <button>
+            <span class="inner-circle"></span>
+          </button>
+          <button>
+            <span class="inner-circle"></span>
+          </button>
+          <button>
+            <span class="inner-circle"></span>
+          </button>
+          <button>
+            <span class="inner-circle"></span>
+          </button>
+        </div>
+      </section>
+      <section id="team">
+        <h1 class="fade-in"><span class="desktop">Developers</span></h1>
+        <div
+          class="team-member-wrapper"
+          aria-roledescription="I'm Shadow."
+        >
+
+          <div class="avatar-wrapper fade-in">
+            <img src="https://cdn.discordapp.com/avatars/270965941142159360/b5dbe8462d75adf6fcced2403fde40f7.png?size=1024" alt="shadow sirrrr" />
+          </div>
+          <div class="member-info">
+            <h2 class="fade-in">
+              Shadow
+              <span class="check-mark"
+                ><img src="imgs/check.svg" alt="Check Mark"
+              /></span>
+            </h2>
+            <div class="avatar-wrapper fade-in">
+              <img src="https://cdn.discordapp.com/avatars/270965941142159360/b5dbe8462d75adf6fcced2403fde40f7.png?size=1024" alt="shadow the best" />
+            </div>
+            <div class="stats fade-in">
+              <div class="fade-in">Bot & Web Developer</div>
+              <div class="fade-in">
+                <span data-time="2018"></span>yrs Experience
+              </div>
+              <div class="fade-in">HTML/CSS/JS/PHP/C#/lua</div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="team-member-wrapper"
+          aria-roledescription="I'm Tim, i hate Frontend..."
+        >
+          <div class="avatar-wrapper fade-in">
+            <img src="https://cdn.discordapp.com/avatars/595212497821368330/538fdbe385c79fd0aae2f8fb870ef246.png" alt="VATICCC" />
+          </div>
+          <div class="member-info">
+            <h2 class="fade-in">
+              Vatic
+              <span class="check-mark"
+                ><img src="imgs/check.svg" alt="Check Mark"
+              /></span>
+            </h2>
+            <div class="avatar-wrapper fade-in">
+              <img src="https://cdn.discordapp.com/avatars/595212497821368330/538fdbe385c79fd0aae2f8fb870ef246.png" alt="VATICCC" />
+            </div>
+            <div class="stats fade-in">
+              <div class="fade-in">Web Developer</div>
+              <div class="fade-in">
+                <span data-time="2018"></span>yrs Experience
+              </div>
+              <div class="fade-in">HTML/CSS/JS/PHP/C#/lua</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="invite" class="fade-in">
+        <h1 data-parallax data-xaxis="0.5" data-yaxis="0">
+          VerCord the <strong>best</strong> Bot
+        </h1>
+        <a
+          href="https://discord.com/api/oauth2/authorize?client_id=1020653798605193286&permissions=268435457&scope=applications.commands%20bot"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-highlight=""
+          data-color-dot="#fff"
+          data-color-background="#5865F2"
+        >
+          <span class="inner-text">Invite</span>
+          <span class="background"></span>
+          <div class="arrow-container">
+            <div class="arrow-wrapper">
+              <span class="circle"></span>
+              <div class="arrow">
+                <span class="line-one"></span>
+                <span class="line-two"></span>
+                <span class="line-three"></span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </section>
+    </main>
+    <footer class="fade-in">
+      <p>
+        This Homepage made in Freelance by Vatic / https://timq-it.eu
+      </p>
+      <div class="footer-nav">
+        <div class="nav-list">
+          <strong>Navigation</strong>
+          <a href="index.html#home" aria-disabled="true">Home</a>
+          <a href="index.html#features" aria-disabled="true">Features</a>
+          <a href="index.html#team" aria-disabled="true">Team</a>
+          <a href="./terms" aria-disabled="true">Terms</a>
+          <a
+            data-color-background="#5865F2"
+            data-color-dot="#fff"
+            href="https://discord.com/api/oauth2/authorize?client_id=1020653798605193286&permissions=268435457&scope=applications.commands%20bot"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Invite</a
+          >
+          <a href="./login/" aria-disabled="true">Login</a>
+        </div>
+        <div class="nav-list">
+          <strong>Purchase</strong>
+          <a
+            href="https://discord.gg/WPypXZcSfV"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Discord</a
+          >
+          <a
+            href="https://discord.gg/WPypXZcSfV"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Support</a
+          >
+        </div>
+        <div class="nav-list">
+          <strong>Contact</strong>
+          <a
+            href="https://discord.gg/WPypXZcSfV"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Discord</a
+          >
+          <a
+            href="https://discord.gg/WPypXZcSfV"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Support</a
+          >
+        </div>
+      </div>
+      <script src="js/time.js"></script>
+      <script src="js/navigation.js"></script>
+      <script src="js/cursor.js"></script>
+      <script src="js/observer.js"></script>
+    </footer>
+  </body>
+
+</html>
